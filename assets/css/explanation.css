@@ -1,0 +1,66 @@
+.explanation {
+  background-image: url(../img/light-rays.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 339px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.explanation:after{
+  content: '';
+  position: absolute;
+  /* width: 70%;
+  height: 2%;
+  background: #2951C3;
+  border-radius: 42%;
+  box-shadow: 0px 9px 205px 130px #2762BB; */
+  width: 0%;
+  height: 2%;
+  background: #2951C3;
+  border-radius: 42%;
+  box-shadow: 0px 16px 48px 88px #2762BB;
+z-index: 1;}
+
+.explanation-container {
+  position: relative;
+  max-width: 320px;
+  /* height: 339px; */
+  /* background: radial-gradient( #2950C2 0%,  #2951C3 0%,  #265BC7 41%, #2762BB  85%); */
+}
+
+.explanation-container::before {
+  content: url('../img/quotation-marks.svg');
+  display: block;
+  position: absolute;
+  width: 23px;
+  height: 22.35px;
+  left: -6%;
+  top: -16%;
+  transform: rotate(180deg);
+}
+
+.explanation-container::after {
+  content: url('../img/quotation-marks.svg');
+  display: block;
+  position: absolute;
+  width: 23px;
+  height: 22.35px;
+  right: -6%;
+  bottom: -16%;
+}
+
+.explanation-text {
+  position:relative;
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  margin: 0 auto;
+  width: 248px;
+  color: #FFF;
+  text-align: center;
+  z-index: 2;
+}

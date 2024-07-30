@@ -1,11 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yeseva+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
   <title>ABC-Group</title>
 </head>
+
 <body>
-  
+  <header class="header">
+    <div class="wrapper__burger">
+      <span class="menu__cross"></span>
+    </div>
+
+    <nav class="header__menu menu">
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#">Главная</a></li>
+        <li class="menu__item"><a href="#">Информация о тесте</a></li>
+        <li class="menu__item active"><a href="#">пройти тест</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <p class="hero__subtitle">Пройдите точный и быстрый
+      </p>
+      <h1 class="hero__title">тест на определение IQ
+      </h1>
+      <img class="hero__img" src="./assets/img/rain_bk3.png" alt="brain">
+      <button class="hero__button button"><span class="button-text">пРойти тест</span></button>
+      <p class="hero__description"><span class="hero__description-yellow">
+          и получите рекомендации <br>
+          по развитию своего интеллекта
+        </span>
+        и улучшению финансового <br> благосостояния и личной жизни</p>
+      <a href="#" class="hero__link"><img src="./assets/img/Group3.svg" class="hero__link-img"
+          alt="link to more information">
+        <p class="hero__link-text">подробнее</p>
+      </a>
+    </section>
+    <section class="explanation">
+      <div class="explanation-container">
+        <p class="explanation-text">Профессиональный <br> IQ-тест позволяет не <br>только определить<br> коэффициент
+          вашего<br> интеллекта, <br>
+          но и выработать список<br> рекомендаций для<br> повышения этого <br>показателя. </p>
+
+      </div>
+    </section>
+    <section class="advice">
+      <div class="advice__text">
+        Также по результатам теста<br>
+        <strong>вы получите</strong> подробные <br> <strong>советы</strong> по определению наиболее перспективной
+        <strong>для вашего<br> типа <span>интеллекта</span> сферы <br> деятельности </strong>, <br>
+        которая принесет вам скорейший финансовый результат.
+      </div>
+      <img class="advice__img" src="./assets/img/brain.png" alt="brain">
+      <button class="advice__button button"><span class="button-text">пРойти тест</span></button>
+    </section>
+    <section class="advantage">
+      <p class="advantage__desc">
+        Прохождение теста займет у вас не более <span>12 минут</span>, а его <span class="text-black">результаты</span>
+        вы сможете <span> использовать
+          всю жизнь.</span>
+      </p>
+      <div class="advantage__lead">
+        Профессиональная интерпретация и детально <span>проработанные рекомендации</span>
+        позволят вам качественно <span>изменить все аспекты своей жизни: </span> от финансового до любовного.
+      </div>
+      <button class="button advantage__button">пойти тест</button>
+    </section>
+  </main>
+  <footer>2019</footer>
+  <div class="popup__bg">
+    <div class="popup">
+      <div class="popup__progress-bar"></div>
+      <div class="popup__content content">
+        <h2 class="popup__content-question">ваш пол:</h2>
+        <ul class="popup__content-list">
+          <!-- <li class="popup__content-item item">
+            <div class="item-circle">
+            </div>
+            <p class="item-text">мужчина</p>
+          </li>
+          <li class="popup__content-item item">
+            <div class="item-circle">
+            </div>
+            <p class="item-text">женщина</p>
+          </li> -->
+        </ul>
+        <button class="button popup__button" disabled>далее</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="./index.js"></script>
 </body>
+
 </html>

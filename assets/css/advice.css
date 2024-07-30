@@ -1,0 +1,43 @@
+.advice {
+  position: relative;
+  width: 100%;
+  height: 509px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 450px;
+  background-color: #F3F3F2;
+}
+
+.advice__text {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  width: 298px;
+  padding-bottom: 20px;
+}
+
+.advice__text>strong {
+  text-transform: uppercase;
+}
+
+.advice__text>strong>span {
+  text-transform: lowercase;
+}
+
+.advice__img {
+  width: 232px;
+  height: 180px;
+}
+
+.advice__button {
+  background-color: #FFC700;
+  margin-bottom: 20px;
+  width: 200px;
+  height: 44px;
+  position: absolute;
+  bottom: 0px;
+  /* z-index: 28; */
+}

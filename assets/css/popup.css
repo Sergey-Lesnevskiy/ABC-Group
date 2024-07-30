@@ -1,0 +1,236 @@
+.popup__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/rain_bk2.png);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s all;
+  z-index: 2;
+  overflow-y: scroll;
+}
+
+.popup__bg.active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+}
+
+.popup {
+  position: absolute;
+  top: 374px;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: transparent;
+  width: 100%;
+  height: 568px;
+  /* padding: 25px; */
+  /* padding-top: 202px; */
+  transition: 0.5s all;
+
+}
+
+.popup.active {
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.5s all;
+}
+
+/* Конец важной части */
+/* Далее код для стилизации формы */
+
+
+
+
+/* .close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.popup label {
+  width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.popup .label__text {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #cfd0d3;
+  margin-bottom: 5px;
+}
+
+.popup input {
+  height: 45px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #cfd0d3;
+}
+
+.popup input:focus {
+  border-bottom: 1px solid #2982ff;
+}
+
+.popup input:focus + .label__text {
+  color: #2982ff;
+}
+
+.popup textarea {
+  resize: none;
+  width: 100%;
+  height: 150px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #cfd0d3;
+  font-size: 18px;
+  padding-top: 5px;
+}
+
+.popup textarea:focus {
+  border-bottom: 1px solid #2982ff;
+}
+
+.popup textarea:focus + .label__text {
+  color: #2982ff;
+} */
+
+.popup button {
+  width: 189px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #DADADA;
+  font-size: 18px;
+  /* border: 2px solid #2982ff; */
+  background-color: #8E8E8E;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.5s all;
+}
+
+/* .popup button:active {
+  transition: 0.5s all;
+} */
+.popup__button.active {
+  background-color: rgba(255, 199, 0, 1);
+}
+
+.popup__progress-bar {
+  position: relative;
+  width: 260px;
+  margin: 0 auto;
+  height: 14px;
+  background-color: #979797;
+  border-radius: 10.5px;
+  /* z-index: -1; */
+}
+
+.popup__progress-bar::before {
+  content: "";
+  position: absolute;
+  width: var(--width);
+  height: 14px;
+  left: 0px;
+  top: 0px;
+  background-color: #3BDE7C;
+  ;
+  border-radius: 10.5px;
+  /* z-index: 1; */
+}
+
+.popup__content {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.popup__content-question {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  color: #FFF;
+}
+
+.popup__content-question:first-letter {
+  text-transform: uppercase;
+}
+
+.popup__content-list {
+  width: 100%;
+}
+
+.popup__content-item {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(90 90 90 / 73%);
+  color: #FFF
+}
+
+.popup__content-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.popup__content-item:hover {
+  border: 1px solid #F2F3F3;
+}
+
+.popup__content-square{
+  width: 75px;
+  height: 75px;
+}
+.item:hover{
+  background-color: #FFC700;
+}
+.item::focus{
+  background-color: #FFC700;
+}
+.item:hover .item-circle{
+  background-color: #2950C2;
+}
+.item:hover .item-text{
+  color: #272727;
+}
+
+.item-circle {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #F2F3F3;
+  border-radius: 50%;
+}
+
+.item-text {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.item-text::first-letter {
+  text-transform: uppercase;
+}
+.popup__wrapper-items{
+  display: flex;
+  flex-wrap: wrap;
+  width: 267px;
+  gap: 21px;
+}
+.popup__wrapper-square{
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 267px;
+  gap: 21px;
+}
